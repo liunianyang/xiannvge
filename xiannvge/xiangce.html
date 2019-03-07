@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            /*background:#06081B;*/
+            perspective:5000px;
+          /*  background: black;*/
+            position: relative;
+        }
+        .show {
+            perspective:5000px;
+            -webkit-transform:rotateX(-30deg);
+            -moz-transform:rotateX(-30deg);
+            transform:rotateX(-30deg);
+            transform-style:preserve-3d;
+        }
+        .box {
+            position:relative;
+            width:150px;
+            height:250px;
+            border:1px solid red;
+            margin:300px auto;
+            transform-style:preserve-3d;
+            -webkit-animation:rotate1 12s linear infinite;
+            -moz-animation:rotate1 12s linear infinite;
+            animation:rotate1 12s linear infinite;
+        }
+        .box img {
+            width:150px;
+            height:250px;
+            border:1px solid #ccc;
+            position:absolute;
+            left:0;
+            top:0;
+            -webkit-box-reflect:below 20px -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,0) 30%,rgba(250,250,250,0.5));
+        }
+        .img1 {
+            -webkit-transform:translateZ(300px);
+            -moz-transform:translateZ(300px);
+            transform:translateZ(300px);
+        }
+        .img2 {
+            -webkit-transform:rotateY(36deg) translateZ(300px);
+            -moz-transform:rotateY(36deg) translateZ(300px);
+            transform:rotateY(36deg) translateZ(300px);
+        }
+        .img3 {
+            -webkit-transform:rotateY(72deg) translateZ(300px);
+            -moz-transform:rotateY(72deg) translateZ(300px);
+            transform:rotateY(72deg) translateZ(300px);
+        }
+        .img4 {
+            -webkit-transform:rotateY(108deg) translateZ(300px);
+            -moz-transform:rotateY(108deg) translateZ(300px);
+            transform:rotateY(108deg) translateZ(300px);
+        }
+        .img5 {
+            width:150px;
+            height:250px;
+            /*line-height: 250px;*/
+          /*  font-size: 26px;*/
+           /* background: rgba(255,255,255,0.8);*/
+           /* background-image: url("img/beiing.jpg");*/
+            -webkit-transform:rotateY(144deg) translateZ(300px);
+            -moz-transform:rotateY(144deg) translateZ(300px);
+            transform:rotateY(144deg) translateZ(300px);
+        }
+        .xiannv{
+            padding-top:10px ;
+            text-align: center;
+            /*line-height: 250px;*/
+        }
+        .img5 p{
+            font-size: 14px;
+            color:rgba(0,0,0,0.8);
+            text-align: center;
+        }
+        .img6 {
+            -webkit-transform:rotateY(180deg) translateZ(300px);
+            -moz-transform:rotateY(180deg) translateZ(300px);
+            transform:rotateY(180deg) translateZ(300px);
+        }
+        .img7 {
+            -webkit-transform:rotateY(216deg) translateZ(300px);
+            -moz-transform:rotateY(216deg) translateZ(300px);
+            transform:rotateY(216deg) translateZ(300px);
+        }
+        .img8 {
+            -webkit-transform:rotateY(252deg) translateZ(300px);
+            -moz-transform:rotateY(252deg) translateZ(300px);
+            transform:rotateY(252deg) translateZ(300px);
+        }
+        .img9 {
+            -webkit-transform:rotateY(288deg) translateZ(300px);
+            -moz-transform:rotateY(288deg) translateZ(300px);
+            transform:rotateY(288deg) translateZ(300px);
+        }
+        .img10 {
+            -webkit-transform:rotateY(324deg) translateZ(300px);
+            -moz-transform:rotateY(324deg) translateZ(300px);
+            transform:rotateY(324deg) translateZ(300px);
+        }
+        @-moz-keyframes rotate1 {
+            0% {
+                -webkit-transform:rotateY(0deg);
+                -moz-transform:rotateY(0deg);
+                transform:rotateY(0deg);
+            }
+            100% {
+                -webkit-transform:rotateY(360deg);
+                -moz-transform:rotateY(360deg);
+                transform:rotateY(360deg);
+            }
+        }@-webkit-keyframes rotate1 {
+             0% {
+                 -webkit-transform:rotateY(0deg);
+                 -moz-transform:rotateY(0deg);
+                 transform:rotateY(0deg);
+             }
+             100% {
+                 -webkit-transform:rotateY(360deg);
+                 -moz-transform:rotateY(360deg);
+                 transform:rotateY(360deg);
+             }
+         }
+        .itemLeft{
+            width: 280px;
+            height: 360px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .itemRight{
+            width: 280px;
+            height: 360px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;
+        }
+        .itemLeft img{
+            width: 240px;
+            height: 300px;
+        }
+        .itemRight img{
+            width: 240px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="show">
+    <div class="box">
+        <img src="img/quan.jpg" alt="">
+        <div class="img5">
+            <!--  <img src="img/gugong.jpg" alt="">-->
+            <h4 class="xiannv">207仙女阁</h4>
+            <p>人生是一场孤独的旅行</p>
+            <p>也会有温柔的相遇</p>
+            <p>因为是你</p>
+            <p>每个瞬间都想要珍惜</p>
+            <p>只要有想见的人</p>
+            <p>就不是孤身一人</p>
+        </div>
+        <img src="img/gong.jpg" class="img1">
+        <img src="img/yang.jpg" class="img2">
+        <img src="img/he.jpg" class="img3">
+        <img src="img/jiangnan.jpg" class="img4">
+        <img src="img/yangc.jpg" class="img6">
+        <img src="img/lu.jpg" class="img7">
+        <img src="img/li.jpg" class="img8">
+        <img src="img/cui.jpg " class="img9">
+        <img src="img/niu1.jpg" class="img10">
+
+    </div>
+    <input type="button" value="点我点我">
+    <input type="button" value="点我点我">
+    <div class="itemLeft">
+        <img src="img/jiangnan.jpg" alt="">
+    </div>
+    <div class="itemRight">
+        <img src="img/gugong.jpg" alt="">
+    </div>
+</div>
+
+<script src="jquery.js"></script>
+<script>
+$(":button").click(function () {
+   $(".itemLeft").show(2000);
+   $(".itemLeft").hide(2000);
+});
+$(":button").click(function () {
+    $(".itemRight").show(2000);
+    $(".itemRight").hide(2000);
+})
+</script>
+</body>
+</html>
